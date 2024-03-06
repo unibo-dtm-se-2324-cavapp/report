@@ -1,0 +1,12 @@
+title: Project work template
+description: A starter template for Software Engineering project work!
+remote_theme: pmarsceill/just-the-docs
+color_scheme: "light"
+search_enabled: true
+plugins:
+  - jekyll-remote-theme
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
