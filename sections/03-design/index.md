@@ -10,9 +10,21 @@ This chapter explains the strategies used to meet the requirements identified in
 
 ## Architecture
 
-- This section explains how the main components of the software are linked with each other
-- A high-level view of the various system components must be provided, for example by using components diagram
-- The chosen architecture must be described (for example, layered architecture)
+At a high level, Cavapp consists of 4 fundamental components:
+
+- The backend, which provides an API for all application functionalities
+- Two frontends: one web and one mobile, which interface with the backend through the REST API
+- The database for data persistence
+
+![Components](/imgs/component-diagram.svg)
+
+The chosen architecture to implement all this is a layered architecture, comprising:
+
+- Presentation layer: responsible for presenting data to clients and handling their requests
+- Business layer: responsible for implementing the application's logic
+- Persistence layer: acting as an interface between the business layer and the database layer
+- Database layer: responsible for data storage and management
+
 
 ## Modelling
 
